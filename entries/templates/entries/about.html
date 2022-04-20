@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style/styleabout.css' %}" />
+    <title>Digital Dairy</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/DD.svg' %}" />
+  </head>
+  <body>
+    <nav>
+      <img src="{% static 'images/DD.svg' %}" class="dd" alt="" />
+      <div class="contnav">
+        <h1>Digital Diary</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'add'%}">AddEntry</a></li>
+        </ul>
+      </div>
+      <img src="{% static 'images/Yash.svg' %}" class="yash" alt="" />
+    </nav>
+    <section class="about-proj">
+      <h2>About Project</h2>
+      <div class="ellipses">
+        <svg
+          class="e1"
+          width="150"
+          height="150"
+          viewBox="0 0 330 330"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="165" cy="165" r="164.5" fill="#F97698" stroke="#FFB845" />
+        </svg>
+
+        <svg
+          class="e2"
+          width="290"
+          height="290"
+          viewBox="0 0 330 330"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="165" cy="165" r="164.5" fill="#FFB845" stroke="#F97698" />
+        </svg>
+
+        <svg
+          class="e3"
+          width="190"
+          height="190"
+          viewBox="0 0 330 330"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="165" cy="165" r="164.5" fill="#FFB845" stroke="#F97698" />
+        </svg>
+
+        <svg
+          class="e4"
+          width="330"
+          height="330"
+          viewBox="0 0 330 330"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="165" cy="165" r="164.5" fill="#F97698" stroke="#FFB845" />
+        </svg>
+      </div>
+
+      <div class="text">
+        <p>
+          This Project is about a "Digital Diary" where you can keep record of
+          your emotions, feeling, ideas, creativity, daily life and much more in
+          the form of text. <br />
+          <br />
+          The Backend of this project is Python with Django Framework, for
+          Frontend we have used HTML & CSS and for Database we have used SQLite.
+        </p>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <p class="copy">Copyright &copy; 2022 | All Rights Reserved</p>
+    <p class="credit">Developed and Designed by Yash & Tarun</p>
+  </footer>
+</html>

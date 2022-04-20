@@ -1,0 +1,19 @@
+/* GLOBAL STYLES */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    min-height: 100%;
+    background-image: linear-gradient(60deg, #AA00B2, #0E04CA);
+    overflow: hidden !important;
+  }
+  
+  /* Fonts */
+  
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rancho&family=Roboto+Slab&display=swap');
+  

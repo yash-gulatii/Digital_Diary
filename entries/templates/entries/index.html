@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style/style.css' %}" />
+    <title>Digital Dairy</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/DD.svg' %}" />
+  </head>
+  <body>
+    <nav>
+      <img src="{% static 'images/DD.svg' %}" class="dd" alt="" />
+      <div class="contnav">
+        <h1>Digital Diary</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'add' %}">AddEntry</a></li>
+        </ul>
+      </div>
+      <img src="{% static 'images/Yash.svg' %}" class="yash" alt="" />
+    </nav>
+    <section class="home">
+      <div class="cont1">
+        <h2>Last Entry</h2>
+        {% for entry in entries2 %}
+        <article class="media">
+          <div class="content">
+            <p>
+              <strong>{{entry.date_posted}}</strong>
+              <br />
+              {{entry.text}}
+            </p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <div class="cont2">
+        <h3>Add Entry</h3>
+
+        <article class="media">
+          <div class="content">
+            <a href="{% url 'add' %}">Click Here To Add Entry</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p class="copy">Copyright &copy; 2022 | All Rights Reserved</p>
+      <p class="credit">Developed and Designed by Yash & Tarun</p>
+    </footer>
+  </body>
+</html>

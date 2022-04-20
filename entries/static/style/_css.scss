@@ -1,0 +1,127 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        list-style: none;
+
+    }
+}
+
+a{  
+    margin: 1rem 1.5rem;
+    font-family: 'Rancho',serif;
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+}
+
+.yash{
+    margin-right: 4rem;
+    opacity: 0%;
+}
+
+.dd{
+    margin-left: 4rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cont1{
+    margin-left: 5rem;
+    margin-top: 10rem;
+    flex: 1rem;
+    
+.content{
+    margin: 5rem;
+    padding: 5rem;
+    padding-top: 2rem;
+    background-color: #FFB845;
+    border-radius: 5rem ;
+}
+
+}
+
+.cont2{
+    margin-right: 5rem;
+    flex:1rem;
+    text-align: center;
+
+    .content{
+        margin-top:8rem;
+    }
+    a{
+        font-size: 6rem;
+        padding: 1rem 1.5rem;
+        background-color: #F97698;
+        border-radius: 4rem ;
+    }
+}
+
+.credit{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Rancho',serif;
+}
+
+footer{
+    position: absolute;
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.copy{
+
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Rancho',serif;
+}
+
+h1{
+    margin-top: 4rem;
+    font-family: 'Rancho',serif;
+    font-size: 12rem;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 15rem;
+    font-family: 'Rancho',serif;
+    color: #F97698;
+}
+
+h3{
+    text-align: center;
+
+    font-size: 15rem;
+    font-family: 'Rancho',serif;
+    color: #FFB845;
+}
+
+p{
+    strong{
+        font-size: 2.5rem;
+        font-family: 'Roboto Slab', serif;
+    }
+    font-size: 4rem;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+h4{
+    font-size: 34rem;
+    color: #F97698;
+}

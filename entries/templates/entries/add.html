@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style/styleadd.css' %}" />
+    <title>Digital Dairy</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/DD.svg' %}" />
+  </head>
+  <body>
+    <nav>
+      <img src="{% static 'images/DD.svg' %}" class="dd" alt="" />
+      <div class="contnav">
+        <h1>Digital Diary</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'add'%}">AddEntry</a></li>
+        </ul>
+      </div>
+      <img src="{% static 'images/Yash.svg' %}" class="yash" alt="" />
+    </nav>
+    <section class="date">
+      <h3>Add Entry</h3>
+      <h4>Date & Time: <span id="datetime"></span></h4>
+    </section>
+    <section class="section">
+      <div class="container">
+        <form method="POST" action="{% url 'add' %}">
+          {% csrf_token %}
+          <div class="field text-area">
+            <div class="control">{{ form.text }}</div>
+          </div>
+
+          <div class="field is-grouped is-grouped-right">
+            <div class="control">
+              <button type="submit" class="button is-link">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p class="copy">Copyright &copy; 2022 | All Rights Reserved</p>
+      <p class="credit">Developed and Designed by Yash & Tarun</p>
+    </footer>
+  </body>
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+  </script>
+</html>
